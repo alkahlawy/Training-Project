@@ -14,11 +14,9 @@
     <div>
         <header>
             <header class="nav">
-                <a class="item" href="#" target="_blank">Home</a>
+                <a class="item" href="#wllcome">Home</a>
                 <a class="item" href="#aboutMe" >About Me</a>
-                <a class="item" href="#">Services</a>
-                <a class="item" href="#">Portfolio</a>
-                <a class="item" href="#">Blog</a>
+                <a class="item" href="#bio">BIO</a>
                 <a class="item" href="#contactUs">Contact Us</a>
             </header>
         </header>
@@ -26,8 +24,11 @@
     <br>
     <br>
     <br>
-    <h1 class="header">Wellcome</h1>
-    <hr color="white">
+    <h1 itemref="#wllcome" class="header">Wellcome</h1>
+    <br>
+    <hr>
+    <br>
+    <br>
     <div class="main">
         <div>
             <nav>
@@ -35,8 +36,8 @@
             </nav>
         </div>
         <div>
-            <p>
-                <h2>I'm Mohamed
+            <p style="padding: 20px;">
+                <h2 style="padding: 20px;"> I'm Mohamed
                     <br>
                     Alkahlawy
                     <br>
@@ -46,17 +47,36 @@
             </p>
         </div>
     </div>
-    <hr color="white">
+    <br>
+    <br>
+    <hr>
+    <div class="bio">
+        <p itemref="#bio">
+            <br>
+            <br>
+           Hi there !! <br>
+           Wellcome to my Web page, it's my pleasure to introduce myself to you.<br>
+           My name is <strong>Mohamed Alkahlawy</strong> i'm a <strong>Computer Enginnering</strong> student in Modern Academy for Enginnering and Technology.<br>
+           I am currently pursuing Bachelor of Science in Computer Engineering. <br>
+           My interests are related to programming and web development. <br>
+           <br>
+           <br>
+        </p>
+    </div>
+    <hr>
+    <br>
+    <br>
     <div class="container">
         <div class="content">
-            <form class="" style="border: 3px solid #0b5ed7; padding: 51px; border-radius: 25px;"  action="index.html"> 
+            <form  itemref="#contactUs" class="" style="border: 3px solid #0b5ed7; padding: 51px; border-radius: 25px;" action="index.html"> 
+                <legend>Contact Us</legend>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Full Name</label>
                     <input type="text" placeholder="Enter your name here" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                   </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" placeholder="Enter your Email or Username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                  <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
@@ -67,26 +87,42 @@
               </form>
         </div>
     </div>
-    <hr color="white">
-    <footer id="foot">
-        <a class="icon" href="https://www.facebook.com/profile.php?id=100006436722922">
-            <i class="fab fa-facebook-square"></i>
-        </a>
-        <a class="icon" href="https://www.facebook.com/profile.php?id=100006436722922">
-            <i class="fab fa-facebook-square"></i>
-        </a>
-        <a class="icon" href="https://www.facebook.com/profile.php?id=100006436722922">
-            <i class="fab fa-facebook-square"></i>
-        </a>
-        <br>
-        &copy; 
-        <script type = "text/javascript">
-            var dt = new Date();
-            document.write(dt.getFullYear()); 
-        </script>  
-        All rights reserved by Mohammed Alkahlawy
-    </footer>
-
+    <br>
+    <div id="fot">
+        <span class="icn" > 
+        <i class="fas fa-envelope"></i><span>  mohamedalkahlawy22@gmail.com </span>
+        </span>
+        <span class="icn" > 
+        <i class="fas fa-mobile-android"></i><span>  01026589680  </span>
+        </span>
+        <span class="icn" > 
+        <i class="fab fa-whatsapp"></i> <span>  01126313922  </span>
+        </span>
+    </div>
+    <br>
+    <br>
+    <div >
+        <footer id="foot">
+            <a class="icon" href="https://www.facebook.com/profile.php?id=100006436722922">
+               <i class="fab fa-facebook-square"></i>
+            </a>
+            <a class="icon" href="https://www.instagram.com/alka7lawy/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="icon" href="https://github.com/alkahlawy">
+                <i class="fab fa-github"></i>
+            </a>
+            <br>
+            <p class="copy">
+            &copy; 
+            <script type = "text/javascript">
+                var dt = new Date();
+                document.write(dt.getFullYear()); 
+            </script>  
+            All rights reserved by Mohammed Alkahlawy
+            </p>
+        </footer>
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
 <script src="js/something.js"></script>
