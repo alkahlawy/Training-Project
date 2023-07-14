@@ -19,25 +19,28 @@
     </div>
     <div class="container">
         <div class="contennt">
-            <form  onsubmit="validate()" style="border: 3px solid #0b5ed7; padding: 51px; border-radius: 25px;"  action="index.html">
+            <form id="myForm" action="index.html"  style="width: 500px;border: 3px solid #0b5ed7; padding: 51px; border-radius: 25px;" >
                 <legend>Log In</legend> 
                 <div id="emailHelp" class="form-text">Wellcome again, nice to see you !!</div>
                 <br>
                 <div class="mb-3">
                   <label class="form-label">Username</label>
                   <input type="text" placeholder="Enter your Username" class="form-control" id="username" >
-                  <div id="username" class="form-text">We'll never share your email with anyone else.</div>
+                  <div id="msg_username" class="form-text text-danger"></div>
                 </div>
                 <div class="mb-3">
-                  <label class="form-label">Password</label>
-                  <input type="password" placeholder="Enter your Password" class="form-control" id="password">
+                    <label class="form-label">Password</label>
+                    <input type="password" placeholder="Enter your Password" class="form-control" id="password">
+                    <div id="msg_password" class="form-text text-danger"></div>
+                    <div id="confirm_password" class="form-text text-success"></div>
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-primary" >Log in</button>
+                <button type="button" onclick="confirmValidate()" class="btn btn-primary">confirm password</button>
+                <button type="submit"  class="btn btn-primary" >Log in</button>
               </form>
         </div>
     </div>
